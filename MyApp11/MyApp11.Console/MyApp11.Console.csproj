@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Program - Copy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Program .txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyApp11.Objects\MyApp11.Objects.csproj" />
+    <ProjectReference Include="..\MyApp11.BizLogic\MyApp11.BizLogic.csproj" />
+  </ItemGroup>
+</Project>
